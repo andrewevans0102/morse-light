@@ -1,0 +1,44 @@
+.display-image {
+    display: flex;
+    align-content: flex-start;
+}
+
+.flashlight {
+    border-style: solid;
+    width: 10em;
+}
+
+.output { 
+    width: 10em;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.telegraph-form {
+    padding-bottom: 2em;
+}
+
+.display-flashlight {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.telegraph-output {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.show-output {
+    display: flex;
+    align-content: flex-start;
+}
+
+.output-item {
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}

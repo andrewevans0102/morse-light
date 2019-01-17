@@ -1,0 +1,2 @@
+1. Cleanup unused code in css file
+2. Create unit tests that cover at least 90% of the component
