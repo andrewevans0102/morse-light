@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MorseLightComponent } from './morse-light.component';
+import { FormsModule } from '@angular/forms';
 
 describe('MorseLightComponent', () => {
   let component: MorseLightComponent;
@@ -8,7 +8,8 @@ describe('MorseLightComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MorseLightComponent ]
+      declarations: [ MorseLightComponent ],
+      imports: [ FormsModule ]
     })
     .compileComponents();
   }));

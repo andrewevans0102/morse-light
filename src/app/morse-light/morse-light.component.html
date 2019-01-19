@@ -2,27 +2,33 @@
   <div class="container">
     <div class="row">
       <div class="col-sm">
-        <h1 class="display-4">Morse Light</h1>
-        <p class="lead">This app simulates sending Morse Code with a flashlight.  The output is shown in the order of (letter) followed by the dot and dash values for the Morse code.</p>
-      </div>
-      <div class="col-sm display-image">
-        <img src="./assets/RadioSignal.png">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h1 class="display-4">Morse Light</h1>
+              <p class="lead">This app simulates sending Morse Code with a flashlight.  The output is shown in the order of (letter) followed by the dot and dash values for the Morse code.</p>        
+            </div>
+            <div class="col-sm">
+              <img src='../../assets/header_image.png'>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <div class="container">
-  <div class="row telegraph-form">
+  <div class="row message-form">
     <div class="col-sm">
-        <form (ngSubmit)="sendTelegraph()" #messageForm="ngForm">
+        <form (ngSubmit)="transmit()" #messageForm="ngForm">
           <div class="form-group">
-            <label for="name">Enter message for telegraph here</label>
+            <label for="name">Enter message for message here</label>
             <input type="text" class="form-control" id="messageText" required [(ngModel)]="message" name="messageText" #messageText="ngModel" pattern="[A-Za-z0-9 ]+">
             <div [hidden]="messageText.valid || messageText.pristine" class="alert alert-danger">
               message must only be numbers or letters
             </div>
           </div>
-          <button type="submit" class="btn btn-success" [disabled]="!messageForm.form.valid">Send Telegraph</button>
+          <button type="submit" class="btn btn-success" [disabled]="!messageForm.form.valid">Send Message</button>
         </form>
     </div>
   </div>
