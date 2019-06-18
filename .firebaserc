@@ -1,5 +1,5 @@
 {
   "projects": {
-    "morse-light": "morse-light"
+    "default": "morse-light-6d365"
   }
 }
